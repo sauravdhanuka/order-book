@@ -1,0 +1,19 @@
+# Add some liquidity
+LIMIT,BUY,99.90,100
+LIMIT,BUY,99.85,50
+LIMIT,SELL,100.10,75
+LIMIT,SELL,100.15,200
+
+# Print the initial book
+PRINT
+
+# Cross the spread with a market order
+MARKET,BUY,0,100
+
+# Print the book again to see the result
+PRINT
+
+# Cancel an order
+# Assuming order ID 1 was the first order
+CANCEL,,,,1
+PRINT

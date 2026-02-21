@@ -24,17 +24,17 @@ add_executable(order-book
 )
 
 # TCP server binary (Phase 2)
-add_executable(order-book-server
-    src/tcp_server.cpp
-    src/protocol.cpp
-    ${CORE_SOURCES}
-)
+# add_executable(order-book-server
+#     src/tcp_server.cpp
+#     src/protocol.cpp
+#     ${CORE_SOURCES}
+# )
 
-# TCP test client (Phase 2)
-add_executable(tcp-client
-    tools/tcp_client.cpp
-    src/protocol.cpp
-)
+# # TCP test client (Phase 2)
+# add_executable(tcp-client
+#     tools/tcp_client.cpp
+#     src/protocol.cpp
+# )
 
 # Benchmark binary
 add_executable(benchmark
